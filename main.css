@@ -10,6 +10,7 @@ sass main.scss:main.css -w
   --air-image: none;
   --pickaxe-image: url("./assets/pickaxe.png");
   --stone-image: url("./assets/stone.png");
+  --brick-image: url("./assets/brick.png");
   --grass-image: url("./assets/grass_side_carried.png");
   --grass-top-image: url("./assets/grass_carried.png");
   --dirt-image: url("./assets/dirt.png");
@@ -154,6 +155,9 @@ a {
 .controls .block-chooser > label.stone {
   background-image: var(--stone-image);
 }
+.controls .block-chooser > label.brick {
+  background-image: var(--brick-image);
+}
 .controls .block-chooser > label.grass {
   background-image: var(--grass-image);
 }
@@ -190,6 +194,9 @@ a {
   display: none;
 }
 .controls:has(> .block-chooser > .stone > input[type=radio]:checked) ~ main .cubes-container > .cube:not(.stone) {
+  display: none;
+}
+.controls:has(> .block-chooser > .brick > input[type=radio]:checked) ~ main .cubes-container > .cube:not(.brick) {
   display: none;
 }
 .controls:has(> .block-chooser > .grass > input[type=radio]:checked) ~ main .cubes-container > .cube:not(.grass) {
@@ -395,6 +402,9 @@ main, main * {
 }
 .content .blocks .cubes-container:has(> .cube.stone > input[type=radio]:checked) {
   --background-image: var(--stone-image);
+}
+.content .blocks .cubes-container:has(> .cube.brick > input[type=radio]:checked) {
+  --background-image: var(--brick-image);
 }
 .content .blocks .cubes-container:has(> .cube.grass > input[type=radio]:checked) {
   --background-image: var(--grass-image);

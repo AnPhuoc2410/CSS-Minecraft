@@ -15,6 +15,7 @@
 <link rel="preload" as="image" href="./assets/log_oak.png" />
 <link rel="preload" as="image" href="./assets/pickaxe.png" />
 <link rel="preload" as="image" href="./assets/stone.png" />
+<link rel="preload" as="image" href="./assets/brick.png" />
 <style>/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22.%2Findex.pug%22%5D%2C%22mappings%22%3A%22%22%7D */</style>
 <section class="info">
 <div class="text">
@@ -33,6 +34,8 @@ Please update it: Chromium version ≥ 105, Safari version ≥ 15.4 or Firefox v
 <span class="label">Block type</span><label class="air" title="air">
 <input type="radio" name="block-type"  />
 </label><label class="stone" title="stone">
+<input type="radio" name="block-type" checked />
+</label><label class="brick" title="brick">
 <input type="radio" name="block-type" checked />
 </label><label class="grass" title="grass">
 <input type="radio" name="block-type"  />
@@ -96,6 +99,14 @@ Please update it: Chromium version ≥ 105, Safari version ≥ 15.4 or Firefox v
 <label for="cube-layer-0-row-0-column--1-stone" class="right"></label>
 <label for="cube-layer--1-row-0-column-0-stone" class="top"></label>
 <label for="cube-layer-1-row-0-column-0-stone" class="bottom"></label>
+</div><div class="cube brick">
+<input type="radio" name="cube-layer-0-row-0-column-0" id="cube-layer-0-row-0-column-0-brick"  />
+<label for="cube-layer-0-row-1-column-0-brick" class="front"></label>
+<label for="cube-layer-0-row--1-column-0-brick" class="back"></label>
+<label for="cube-layer-0-row-0-column-1-brick" class="left"></label>
+<label for="cube-layer-0-row-0-column--1-brick" class="right"></label>
+<label for="cube-layer--1-row-0-column-0-brick" class="top"></label>
+<label for="cube-layer-1-row-0-column-0-brick" class="bottom"></label>
 </div><div class="cube grass">
 <input type="radio" name="cube-layer-0-row-0-column-0" id="cube-layer-0-row-0-column-0-grass"  />
 <label for="cube-layer-0-row-1-column-0-grass" class="front"></label>
@@ -159,6 +170,14 @@ Please update it: Chromium version ≥ 105, Safari version ≥ 15.4 or Firefox v
 <label for="cube-layer-0-row-0-column-0-stone" class="right"></label>
 <label for="cube-layer--1-row-0-column-1-stone" class="top"></label>
 <label for="cube-layer-1-row-0-column-1-stone" class="bottom"></label>
+</div><div class="cube brick">
+<input type="radio" name="cube-layer-0-row-0-column-1" id="cube-layer-0-row-0-column-1-brick"  />
+<label for="cube-layer-0-row-1-column-1-brick" class="front"></label>
+<label for="cube-layer-0-row--1-column-1-brick" class="back"></label>
+<label for="cube-layer-0-row-0-column-2-brick" class="left"></label>
+<label for="cube-layer-0-row-0-column-0-brick" class="right"></label>
+<label for="cube-layer--1-row-0-column-1-brick" class="top"></label>
+<label for="cube-layer-1-row-0-column-1-brick" class="bottom"></label>
 </div><div class="cube grass">
 <input type="radio" name="cube-layer-0-row-0-column-1" id="cube-layer-0-row-0-column-1-grass"  />
 <label for="cube-layer-0-row-1-column-1-grass" class="front"></label>
@@ -222,6 +241,14 @@ Please update it: Chromium version ≥ 105, Safari version ≥ 15.4 or Firefox v
 <label for="cube-layer-0-row-0-column-1-stone" class="right"></label>
 <label for="cube-layer--1-row-0-column-2-stone" class="top"></label>
 <label for="cube-layer-1-row-0-column-2-stone" class="bottom"></label>
+</div><div class="cube brick">
+<input type="radio" name="cube-layer-0-row-0-column-2" id="cube-layer-0-row-0-column-2-brick"  />
+<label for="cube-layer-0-row-1-column-2-brick" class="front"></label>
+<label for="cube-layer-0-row--1-column-2-brick" class="back"></label>
+<label for="cube-layer-0-row-0-column-3-brick" class="left"></label>
+<label for="cube-layer-0-row-0-column-1-brick" class="right"></label>
+<label for="cube-layer--1-row-0-column-2-brick" class="top"></label>
+<label for="cube-layer-1-row-0-column-2-brick" class="bottom"></label>
 </div><div class="cube grass">
 <input type="radio" name="cube-layer-0-row-0-column-2" id="cube-layer-0-row-0-column-2-grass"  />
 <label for="cube-layer-0-row-1-column-2-grass" class="front"></label>
@@ -285,6 +312,14 @@ Please update it: Chromium version ≥ 105, Safari version ≥ 15.4 or Firefox v
 <label for="cube-layer-0-row-0-column-2-stone" class="right"></label>
 <label for="cube-layer--1-row-0-column-3-stone" class="top"></label>
 <label for="cube-layer-1-row-0-column-3-stone" class="bottom"></label>
+</div><div class="cube brick">
+<input type="radio" name="cube-layer-0-row-0-column-3" id="cube-layer-0-row-0-column-3-brick"  />
+<label for="cube-layer-0-row-1-column-3-brick" class="front"></label>
+<label for="cube-layer-0-row--1-column-3-brick" class="back"></label>
+<label for="cube-layer-0-row-0-column-4-brick" class="left"></label>
+<label for="cube-layer-0-row-0-column-2-brick" class="right"></label>
+<label for="cube-layer--1-row-0-column-3-brick" class="top"></label>
+<label for="cube-layer-1-row-0-column-3-brick" class="bottom"></label>
 </div><div class="cube grass">
 <input type="radio" name="cube-layer-0-row-0-column-3" id="cube-layer-0-row-0-column-3-grass"  />
 <label for="cube-layer-0-row-1-column-3-grass" class="front"></label>
@@ -348,6 +383,14 @@ Please update it: Chromium version ≥ 105, Safari version ≥ 15.4 or Firefox v
 <label for="cube-layer-0-row-0-column-3-stone" class="right"></label>
 <label for="cube-layer--1-row-0-column-4-stone" class="top"></label>
 <label for="cube-layer-1-row-0-column-4-stone" class="bottom"></label>
+</div><div class="cube brick">
+<input type="radio" name="cube-layer-0-row-0-column-4" id="cube-layer-0-row-0-column-4-brick"  />
+<label for="cube-layer-0-row-1-column-4-brick" class="front"></label>
+<label for="cube-layer-0-row--1-column-4-brick" class="back"></label>
+<label for="cube-layer-0-row-0-column-5-brick" class="left"></label>
+<label for="cube-layer-0-row-0-column-3-brick" class="right"></label>
+<label for="cube-layer--1-row-0-column-4-brick" class="top"></label>
+<label for="cube-layer-1-row-0-column-4-brick" class="bottom"></label>
 </div><div class="cube grass">
 <input type="radio" name="cube-layer-0-row-0-column-4" id="cube-layer-0-row-0-column-4-grass"  />
 <label for="cube-layer-0-row-1-column-4-grass" class="front"></label>
@@ -411,6 +454,14 @@ Please update it: Chromium version ≥ 105, Safari version ≥ 15.4 or Firefox v
 <label for="cube-layer-0-row-0-column-4-stone" class="right"></label>
 <label for="cube-layer--1-row-0-column-5-stone" class="top"></label>
 <label for="cube-layer-1-row-0-column-5-stone" class="bottom"></label>
+</div><div class="cube brick">
+<input type="radio" name="cube-layer-0-row-0-column-5" id="cube-layer-0-row-0-column-5-brick"  />
+<label for="cube-layer-0-row-1-column-5-brick" class="front"></label>
+<label for="cube-layer-0-row--1-column-5-brick" class="back"></label>
+<label for="cube-layer-0-row-0-column-6-brick" class="left"></label>
+<label for="cube-layer-0-row-0-column-4-brick" class="right"></label>
+<label for="cube-layer--1-row-0-column-5-brick" class="top"></label>
+<label for="cube-layer-1-row-0-column-5-brick" class="bottom"></label>
 </div><div class="cube grass">
 <input type="radio" name="cube-layer-0-row-0-column-5" id="cube-layer-0-row-0-column-5-grass"  />
 <label for="cube-layer-0-row-1-column-5-grass" class="front"></label>
@@ -474,6 +525,14 @@ Please update it: Chromium version ≥ 105, Safari version ≥ 15.4 or Firefox v
 <label for="cube-layer-0-row-0-column-5-stone" class="right"></label>
 <label for="cube-layer--1-row-0-column-6-stone" class="top"></label>
 <label for="cube-layer-1-row-0-column-6-stone" class="bottom"></label>
+</div><div class="cube brick">
+<input type="radio" name="cube-layer-0-row-0-column-6" id="cube-layer-0-row-0-column-6-brick"  />
+<label for="cube-layer-0-row-1-column-6-brick" class="front"></label>
+<label for="cube-layer-0-row--1-column-6-brick" class="back"></label>
+<label for="cube-layer-0-row-0-column-7-brick" class="left"></label>
+<label for="cube-layer-0-row-0-column-5-brick" class="right"></label>
+<label for="cube-layer--1-row-0-column-6-brick" class="top"></label>
+<label for="cube-layer-1-row-0-column-6-brick" class="bottom"></label>
 </div><div class="cube grass">
 <input type="radio" name="cube-layer-0-row-0-column-6" id="cube-layer-0-row-0-column-6-grass"  />
 <label for="cube-layer-0-row-1-column-6-grass" class="front"></label>
@@ -537,6 +596,14 @@ Please update it: Chromium version ≥ 105, Safari version ≥ 15.4 or Firefox v
 <label for="cube-layer-0-row-0-column-6-stone" class="right"></label>
 <label for="cube-layer--1-row-0-column-7-stone" class="top"></label>
 <label for="cube-layer-1-row-0-column-7-stone" class="bottom"></label>
+</div><div class="cube brick">
+<input type="radio" name="cube-layer-0-row-0-column-7" id="cube-layer-0-row-0-column-7-brick"  />
+<label for="cube-layer-0-row-1-column-7-brick" class="front"></label>
+<label for="cube-layer-0-row--1-column-7-brick" class="back"></label>
+<label for="cube-layer-0-row-0-column-8-brick" class="left"></label>
+<label for="cube-layer-0-row-0-column-6-brick" class="right"></label>
+<label for="cube-layer--1-row-0-column-7-brick" class="top"></label>
+<label for="cube-layer-1-row-0-column-7-brick" class="bottom"></label>
 </div><div class="cube grass">
 <input type="radio" name="cube-layer-0-row-0-column-7" id="cube-layer-0-row-0-column-7-grass"  />
 <label for="cube-layer-0-row-1-column-7-grass" class="front"></label>
