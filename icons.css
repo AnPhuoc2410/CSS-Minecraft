@@ -1,5 +1,4 @@
 
-/* See https://benjaminaster.com/icons/ */
 
 :where([class^="icon:"], [class*=" icon:"]) {
 	&::before {
